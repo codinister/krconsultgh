@@ -1,0 +1,17 @@
+@media (min-width: 35em) {
+  .container {
+    padding-inline: 6.4;
+    margin-inline: auto;
+  }
+  .img-box{
+    position: relative;
+    overflow: hidden;
+    & > div:nth-of-type(1){
+      position: absolute; 
+      inset: 0; 
+    }
+  }
+
+
+  
+}

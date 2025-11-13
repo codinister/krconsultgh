@@ -1,7 +1,7 @@
 
 import { createClient } from 'next-sanity';
 
-const config = process.env.NEXT_PUBLIC_SANITY_CLIENT || '';
+const config = process.env.SANITY_SERVER_API_KEY || '';
 
 const serverConfig = createClient({
   dataset: 'production',

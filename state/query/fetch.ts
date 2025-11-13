@@ -5,10 +5,11 @@ import axios from 'axios';
 const client = axios.create({
   baseURL: '/api',
 });
-const fetchApi = ({ ...options }) => {
+
+const fetch = ({ ...options }) => {
   return client(options)
     .then((data) => data)
     .catch((err) => err);
 };
 
-export default fetchApi;
+export default fetch;

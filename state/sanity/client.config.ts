@@ -6,7 +6,7 @@ import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 
 
-const config = process.env.SANITY_SERVER_CLIENT || '';
+const config = process.env.NEXT_PUBLIC_SANITY_CLIENT || '';
 
 const clientConfig = defineConfig({
     projectId: config, 

@@ -1,0 +1,25 @@
+.btn-primary {
+  background-color: var(--medium);
+  color: var(--light);
+  border-radius: 2.4rem;
+  padding-inline: 2.4rem;
+  padding-block: 0.8rem;
+  text-align: center;
+  width: max-content;
+}
+
+.btn-outline {
+  background-color: var(--light);
+  border: solid 0.1rem var(--medium);
+  color: var(--medium);
+  border-radius: 2.4rem;
+  padding-inline: 2.4rem;
+  padding-block: 0.8rem;
+  text-align: center;
+  width: max-content;
+  &:hover {
+    background-color: var(--medium);
+    border: solid 0.1rem var(--medium);
+    color: var(--light);
+  }
+}

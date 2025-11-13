@@ -1,15 +1,16 @@
 'use client'
 
 import { useQuery } from 'react-query';
-import fetchApi from './fetchApi';
-const useGetQuery = (key: string, url: string) => {
-  const fetch = () => {
-    return fetchApi({ url });
-  };
+import fetch from './fetch';
 
-  const res = useQuery(key, fetch);
 
-  return res?.data.data || '';
+const useGetQuery = ( key: string, url: string) => {
+  const fn = () => fetch({ url });
+
+  const res = useQuery(key, fn) 
+
+    return res?.data?.data || []
+
 };
 
 export default useGetQuery;
