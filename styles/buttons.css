@@ -1,11 +1,18 @@
 .btn-primary {
   background-color: var(--medium);
-  color: var(--light);
+  color: var(--light)!important;
   border-radius: 2.4rem;
   padding-inline: 2.4rem;
   padding-block: 0.8rem;
   text-align: center;
   width: max-content;
+  border: none;
+  display: block;
+  border: solid 0.1rem var(--medium);
+  &:hover {
+    background-color: white;
+    color: var(--medium)!important;
+  }
 }
 
 .btn-outline {

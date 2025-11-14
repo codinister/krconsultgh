@@ -5,12 +5,15 @@ import { NextResponse } from 'next/server';
 export const revalidate = 0;
 export const dynamic = 'force-dynamic';
 
-export async function GET(): Promise<any> {
+export async function GET() {
   try {
     const result = await serverConfig.fetch(groq`*[_type == 'aboutus']{
           title,
           textcard,
-          primarycard
+          primarycard[]{
+          ...,
+          'image': image.asset->url
+          }
         }`);
 
     return NextResponse.json(result)

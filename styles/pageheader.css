@@ -1,0 +1,45 @@
+@media (min-width: 35em) {
+  .pageheader {
+    height: 60rem;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: white;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 35em) {
+  .pageheader {
+    height: 30rem;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: white;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+  }
+}
+

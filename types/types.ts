@@ -1,3 +1,5 @@
+import {z} from 'zod'
+
 export type ReactChildren = {
   children: React.ReactNode;
 };
@@ -10,20 +12,13 @@ type PrimaryCard = {
   exerpt: string;
 };
 
-type FullTextCardCard = {
-  title: string;
-  slug: string;
-  sub_title: string;
-  image: string;
-  exerpt: string;
-  body: any;
-};
+
 
 type TextCard = {
   title: string;
   slug: string;
   sub_title: string;
-  exerpt: string;
+  excerpt: string;
 };
 
 type HeadingCard = {
@@ -34,12 +29,12 @@ type HeadingCard = {
 export type heroType = {
   title: string;
   primarycard: PrimaryCard;
-};
+}[]
 
 export type portfolioType = {
   title: string;
   textcard: TextCard;
-  primarycard: PrimaryCard;
+  primarycard: PrimaryCard[];
 }[];
 
 export type whychooseusType = {
@@ -82,3 +77,10 @@ export type servicesType = {
   textcard: TextCard;
   primarycard: TextCard[];
 }[];
+
+
+export const contactSchema = z.object({
+  name: z.string().min(2, "Name field required!"),
+  email: z.string().email(), 
+  message: z.string().min(2, "Message field required!")
+})

@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 import './globals.css';
 import Footer from '@/components/Footer';
@@ -16,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body  cz-shortcut-listen="true">
+    <html lang="en" data-qb-installed="true" suppressHydrationWarning={true}>
+      <body cz-shortcut-listen="true">
         <QueryProvider>
           <Nav />
           {children}
