@@ -37,25 +37,25 @@ const Nav = () => {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/aboutpage"
               onClick={() => toggleFn('hide')}
-              className={pathFn('/about')}
+              className={pathFn('/aboutpage')}
             >
               About us
             </Link>
           </li>
           <li>
             <Link
-              href="/services"
+              href="/servicespage"
               onClick={() => toggleFn('hide')}
-              className={pathFn('/services')}
+              className={pathFn('/servicespage')}
             >
               Services
             </Link>
           </li>
           <li>
             <Link
-              href="/contact"
+              href="/contactpage"
               onClick={() => toggleFn('hide')}
               className="btn-primary"
             >
