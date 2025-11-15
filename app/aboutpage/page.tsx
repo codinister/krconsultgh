@@ -1,19 +1,15 @@
-'use client';
+'use client'
 
-import QuickContact from '@/components/QuickContact';
-import Analytics from '@/components/sections/Analytics';
-import Hero from '@/components/sections/Hero';
-import ServicesSection from '@/components/sections/ServicesSection';
-import WhyChooseUs from '@/components/sections/WhyChooseUs';
+import Pageheader from "@/components/Pageheader";
+import AboutUsSection from "@/components/sections/AboutUsSection";
+import Portfolio from "@/components/sections/Portfolio";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <>
-      <Hero />
-      <ServicesSection />
-      <QuickContact />
-      <WhyChooseUs />
-      <Analytics />
+    <Pageheader title="About Us" />
+    <AboutUsSection />
+     <Portfolio />
     </>
   );
 }
