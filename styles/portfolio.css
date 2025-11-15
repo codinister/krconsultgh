@@ -58,14 +58,13 @@
 @media (max-width: 35em) {
   .portfolio {
     background-color: var(--dark);
-    padding: 3.2rem;
+    padding: 2.4rem;
     color: white;
     margin-block: 6.4rem;
     margin-inline: 2.4rem;
     border-radius: 2.4rem;
     & > div:nth-of-type(1) {
       margin-inline: auto;
-      padding-inline: 2.4rem;
       text-align: center;
       h2 {
         color: white;
