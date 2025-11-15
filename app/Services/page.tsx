@@ -1,5 +1,3 @@
-'use client';
-
 import Pageheader from '@/components/Pageheader';
 import Portfolio from '@/components/sections/Portfolio';
 import ServicesSection from '@/components/sections/ServicesSection';
