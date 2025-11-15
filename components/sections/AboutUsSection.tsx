@@ -3,7 +3,7 @@
 import useGetQuery from '@/state/query/useGetQuery';
 import { aboutusType } from '@/types/types';
 
-const AboutUs = () => {
+const AboutUsSection = () => {
   const result = useGetQuery('aboutus', '/aboutus');
   const data: aboutusType = result || [];
 
@@ -44,4 +44,7 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsSection
+
+
+

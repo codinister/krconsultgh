@@ -4,7 +4,7 @@ import useGetQuery from '@/state/query/useGetQuery';
 import { servicesType } from '@/types/types';
 import ServiceBox from '../ServiceBox';
 
-const Services = () => {
+const ServicesSection = () => {
   const result = useGetQuery('services', '/services');
   const data: servicesType = result || [];
 
@@ -37,4 +37,5 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesSection
+

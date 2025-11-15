@@ -7,7 +7,7 @@ import { settingsType } from '@/types/types';
 import ContactDetails from '../ContactDetails';
 import ContactForm from '../ContactForm';
 
-const Contact = () => {
+const ContactSection = () => {
   const result = useGetQuery('settings', '/settings');
   const sett: settingsType = result || [];
 
@@ -40,4 +40,6 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactSection
+
+
