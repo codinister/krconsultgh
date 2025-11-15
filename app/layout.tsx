@@ -5,8 +5,9 @@ import Nav from '@/components/Nav';
 import QueryProvider from '@/state/query/QueryProvider';
 
 export const metadata: Metadata = {
-  title: 'KR Consult and Investments',
-  description: 'Building and Construction in Ghana',
+  title: 'KR Consult and Investment',
+  description: 'Consult and Investment',
+  keywords: 'Accra,Consult,Investment,Ghana'
 };
 
 export default function RootLayout({
